@@ -1,6 +1,6 @@
-<h1>Privacy Policy of Ryusuke_Morita</h1>
+<h1>Privacy Policy of Profile_Link</h1>
 
-<p>Ryusuke_Morita operates the http://localhost:5000 website, which provides the SERVICE.</p>
+<p>I operates the http://localhost:5000 website, which provides the SERVICE.</p>
 
 <p>This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service, the Profile_LInk website.</p>
 
