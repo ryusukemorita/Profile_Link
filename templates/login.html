@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Index</title>
+  <link rel="stylesheet"
+        href="{{url_for('static', filename='style.css')}}">
+</head>
+
+{% block content %}
+<p>{{ message }}</p>
+<form method="post" action="">
+  <div>
+    <a href="/login/facebook_request_auth">Facebookでログイン</a>
+  </div>
+</form>
+{% endblock %}
+
+{% block footer %}
+copyright 2019 morita.
+{% endblock %}
