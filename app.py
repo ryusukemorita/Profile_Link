@@ -5,7 +5,15 @@ import requests
 import json
 import facebook
 
+<<<<<<< HEAD
+app = Flask(__name__, instance_relative_config=True)
+
+app.config.from_pyfile('secret.cfg')
+
+print (app.config['FB_APP_ID'])
+=======
 app = Flask(__name__)
+>>>>>>> origin/main
 
 @app.route('/', methods = ['GET'])
 class facebook_login:
@@ -24,7 +32,11 @@ class facebook_login:
         json = requests.get(url).content
         print(json)
 
+<<<<<<< HEAD
+    FB_APP_ID =
+=======
     FB_APP_ID = '515948162695809'
+>>>>>>> origin/main
     FB_APP_SECRET = '1474c603c3cb832ca8881746ad2c1805'
     FB_APP_ACCESS_TOKEN = login(FB_APP_ID)
 
