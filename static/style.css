@@ -1,0 +1,23 @@
+body{
+  margin: 20px;
+  background-color: aliceblue;
+}
+h1{
+  color: green;
+  font-size: 36pt;
+  margin: 0px;
+}
+p{
+  font-size: 14pt;
+}
+pre{
+  background-color: white;
+  font-size: 12pt;
+  padding: 10px
+}
+div.footer{
+  text-align: right;
+  border-bottom: 1px solid blue;
+  color: lightskyblue;
+  margin: 50px 0px;
+}
