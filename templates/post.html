@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+{% extends "layout.html" %}
+
+{% block title %}
+Next
+{% endblock %}
+
+{% block headline %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<p>{{ message }}</p>
+<form method="post" action="">
+  <div>
+    <label for="">
+      <input type = "checkbox" name = "input_service" value = "fb">Facebook
+      <input type = "checkbox" name = "input_service" value = "ig">Instagram
+      <input type = "checkbox" name = "input_service" value = "ta">Tripadvisor
+    </label>
+  </div>
+  <div>
+    <label for="">
+      Name:
+      <input type="text" name="input_name" value={{input_name}}>
+    </label>
+  </div>
+  <div>
+    <label for="">
+      Address:
+      <input type="text" name="input_address" value={{input_address}}>
+    </label>
+  </div>
+  <div>
+    <label for="">
+      Phone Number:
+      <input type="tel" name="input_phone" value={{input_phone}}>
+    </label>
+  </div>
+  <div>
+    <input type = "submit" value="OK">
+  </div>
+  <div>
+    <input type = "submit" value="Cancel">
+  </div>
+
+</form>
+{% endblock %}
+
+{% block footer %}
+copyright 2019 morita.
+{% endblock %}
