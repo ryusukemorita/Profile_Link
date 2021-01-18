@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+{% extends "layout.html" %}
+
+{% block title %}
+Next
+{% endblock %}
+
+{% block headline %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<p>{{ message }}</p>
+  <form method="post" action="/login">
+    <div class="login">
+      <div class="login-triangle"></div>
+
+      <h2 class="login-header">Login</h2>
+
+      <form class="login-container">
+        <p><input type="email" placeholder="Email" value={{email}}></p>
+        <p><input type="password" placeholder="Password" value={{password}}></p>
+        <p><input type="submit" value="Login"></p>
+      </form>
+    </div>
+  </form>
+{% endblock %}
+
+{% block footer %}
+copyright 2019 morita.
+{% endblock %}
