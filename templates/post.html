@@ -1,58 +1,9 @@
 <!DOCTYPE html>
-<!--
-<html lang="ja">
-<head>
-  <meta charset="UTF-8"/>
-  <title>Index</title>
-  <link rel="stylesheet"
-        href="{{url_for('static', filename='style.css')}}">
-</head>
-<body>
-  <h1>{{title}}</h1>
-  <p>{{message}}</p>
-  { % if flg %}
-  <p style="background-color: red; font-weight: bold;;">
-    警告! </p>
-  { % else %}
-  <p style="background-color: blue">
-    infomation
-  </p>
-
-
-  <form method="post" acction="/">
-    <div>
-      <input type="checkbox" name="check" id="ck1">
-      <label for="ck1">Checkbox</label>
-    </div>
-    <div>
-      <input type="radio" name="radio" id="r1" value="A">
-      <label for="r1">Radio1</label>
-    </div>
-    <div>
-      <input type="radio" name="radio" id="r2" value="B">
-      <label for="r1">Radio2</label>
-    </div>
-    <div>
-      <select name="sel" multiple>
-        <option>Orange</option>
-        <option>Grape</option>
-        <option>Apple</option>
-        <option>Pine</option>
-      </select>
-    </div>
-    <div>
-      <input type="submit">
-    </div>
-  </form>
-
-</body>
-</html>
--->
 
 {% extends "layout.html" %}
 
 {% block title %}
-Next
+Profile Link
 {% endblock %}
 
 {% block headline %}
@@ -63,37 +14,43 @@ Next
 <p>{{ message }}</p>
 <form method="post" action="">
   <div>
-    <label for="">
-      Service:
-      <input type = "checkbox" name = "input_service" value = "fb">Facebook
-      <input type = "checkbox" name = "input_service" value = "ig">Instagram
-      <input type = "checkbox" name = "input_service" value = "ta">Tripadvisor
-    </label>
+    <div class="m-1 data-toggle=buttons">Target Service:
+      <label class = "btn btn-primary">
+        <input type = "checkbox" value = "fb">Facebook
+      </label>
+      <label class = "btn btn-danger">
+        <input type = "checkbox" value = "ig">Instagram
+      </label>
+      <label class = "btn btn-success">
+        <input type = "checkbox" value = "ta">Tripadvisor
+      </label>
+    </div>
   </div>
-  <div>
-    <label for="">
-      Name:
-      <input type="text" name="input_name" value={{input_name}}>
-    </label>
+
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" class="form-control" placeholder="Enter Your Name" name="input_name" value={{input_name}}>
   </div>
-  <div>
-    <label for="">
-      Address:
-      <input type="text" name="input_address" value={{input_address}}>
-    </label>
+  <div class="form-group">
+    <label for="name">Address:</label>
+    <input type="text" class="form-control" placeholder="Enter Your Address" name="input_address" value={{input_address}}>
   </div>
-  <div>
-    <label for="">
-      Phone Number:
-      <input type="tel" name="input_phone" value={{input_phone}}>
-    </label>
+  <div class="form-group">
+    <label for="name">Phone Number:</label>
+    <input type="tel" class="form-control" placeholder="Enter Your Phone Number" name="input_phone" value={{input_phone}}>
   </div>
-  <div>
-    <input type = "submit" value="OK">
+
+  <div class="modal fade" id="dlog">
+    <div class="modal-dialog" role="document">
+      <div class="alert alert-primary" role="alert">
+         現在、Facebook社・TripAdvisor社へアプリへの
+        API Permissionを申請中のため本アプリはご利用できません。
+      </div>
+    </div>
   </div>
-  <div>
-    <input type = "submit" value="Cancel">
-  </div>
+
+  <button type = "button" class="btn btn-secondary" data-toggle="modal" data-target="#dlog">OK</button>
+  <button type = "submit" class="btn btn-secondary">Cancel</button>
 
 </form>
 {% endblock %}
