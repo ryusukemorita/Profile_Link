@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+{% extends "layout.html" %}
+
+{% block title %}
+Profile Link
+{% endblock %}
+
+{% block headline %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<p>{{ message }}</p>
+<form method="post" action="">
+  <div>
+    <div class="m-1 data-toggle=buttons">Target Service:
+      <label class = "btn btn-primary">
+        <input type = "checkbox" value = "fb">Facebook
+      </label>
+      <label class = "btn btn-danger">
+        <input type = "checkbox" value = "ig">Instagram
+      </label>
+      <label class = "btn btn-success">
+        <input type = "checkbox" value = "ta">Tripadvisor
+      </label>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" class="form-control" placeholder="Enter Your Name" name="input_name" value={{input_name}}>
+  </div>
+  <div class="form-group">
+    <label for="name">Address:</label>
+    <input type="text" class="form-control" placeholder="Enter Your Address" name="input_address" value={{input_address}}>
+  </div>
+  <div class="form-group">
+    <label for="name">Phone Number:</label>
+    <input type="tel" class="form-control" placeholder="Enter Your Phone Number" name="input_phone" value={{input_phone}}>
+  </div>
+
+  <div class="modal fade" id="dlog">
+    <div class="modal-dialog" role="document">
+      <div class="alert alert-primary" role="alert">
+         現在、Facebook社・TripAdvisor社へアプリへの
+        API Permissionを申請中のため本アプリはご利用できません。
+      </div>
+    </div>
+  </div>
+
+  <button type = "button" class="btn btn-secondary" data-toggle="modal" data-target="#dlog">OK</button>
+  <button type = "submit" class="btn btn-secondary">Cancel</button>
+
+</form>
+{% endblock %}
+
+{% block footer %}
+copyright 2019 morita.
+{% endblock %}
