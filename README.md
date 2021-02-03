@@ -37,7 +37,7 @@ So, you will use this application.
 # Technology used
 
 This software uses the following open source packages:
-![image](https://github.com/ryusukemorita/chat_board/blob/master/image/tec.gif?raw=true)
+![image](https://github.com/ryusukemorita/Profile_Link/blob/master/image/tec.gif?raw=true)
 
 # Future features
 
