@@ -1,33 +1,50 @@
-<h1>Privacy Policy of Profile_Link</h1>
+# Profile_Link (In Development...)
 
-<p>I operates the http://localhost:5000 website, which provides the SERVICE.</p>
+(URL: https://profilelink.biz/login)
 
-<p>This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service, the Profile_LInk website.</p>
+1. [About](#About)
+1. [Development](#Development)
+1. [Other command](#Other%20command)
+1. [Technology used](#Technology%20used)
+1. [Future features](#Future%20features)
+1. [Contributing](#Contributing)
+1. [License](#License)
 
-<p>If you choose to use our Service, then you agree to the collection and use of information in relation with this policy. The Personal Information that we collect are used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy. O
+# About
 
-<p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at http://localhost:5000, unless otherwise defined in this Privacy Policy.</p>
+Profile_Link(URL: http://profilelink.biz/ )は Facebook や Instagram といった各種サービスのアカウントをもつユーザーがアカウントのプロフィールを一括で変更するためのアプリケーションです。If you use this app, you can post your message and read the other user's message.  
 
-<h2>Information Collection and Use</h2>
 
-<p>For a better experience while using our Service, I don’t  require you to provide us with certain personally identifiable information, including your name, phone number, and postal address. </p>
+# Development
 
-<h2>Log Data</h2>
+Follow this guide to set up your environment etc.
 
-<p>I don’t  want to inform you that whenever you visit our Service.</p>
+To clone and run this application, you'll need pip and Git installed on your computer.  
 
-<h2>Security</h2>
+**Python Library**
+This application requirs following python library.
 
-<p>We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.</p>
+・flask
+・random
+・string
+・facebook-sdk
 
-<p>Children's Privacy</p>
+# Access Profile Link
 
-<p>Our Services do not address anyone under the age of 13. We do not knowingly collect personal identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do necessary actions.</p>
+If you run this applicaton on your local enviroment, you can access https://profilelink.biz/login .
+So, you will use this application.
 
-<h2>Changes to This Privacy Policy</h2>
+# Technology used
 
-<p>We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately, after they are posted on this page.</p>
+This software uses the following open source packages:
+![image](https://github.com/ryusukemorita/chat_board/blob/master/image/tec.gif?raw=true)
 
-<h2>Contact Us</h2>
+# Future features
 
-<p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact me.</p>
+# Contributing
+
+Pull requests are welcome!!
+
+# Licence
+
+Usage is provided under the [MIT License](http://opensource.org/licenses/mit-license.php). See LICENSE for the full details.
